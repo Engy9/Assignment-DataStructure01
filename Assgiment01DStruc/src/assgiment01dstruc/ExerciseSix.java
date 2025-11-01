@@ -1,13 +1,14 @@
 package assgiment01dstruc;
-
 import java.util.ArrayList;
 
 public class ExerciseSix {
-    public static ArrayList<Integer> getElementsAfterKey(ArrayList<Integer> list, int key) {
+
+    // method to remove all occurrences of a key from an ArrayList
+    public static ArrayList<Integer> removeAllOccurrencesList(ArrayList<Integer> list, int key) {
         ArrayList<Integer> result = new ArrayList<>();
-        for (int i = 0; i < list.size(); i++) {
-            if (list.get(i) == key && i + 1 < list.size()) {
-                result.add(list.get(i + 1));
+        for (int num : list) {
+            if (num != key) {
+                result.add(num);
             }
         }
         return result;
