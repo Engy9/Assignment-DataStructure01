@@ -6,13 +6,14 @@ public class Assgiment01DStruc extends ExerciseSix{
     public static void main(String[] args) {
 
         // Question One
-        System.out.println("Qustion One:");
-        int[] arr1 = {2, 4, 6, 7, 9};
+      System.out.println("Qustion One:");
+        int[] numbers = {2, 4, 6, 7, 9};
         int sum = 0;
-        for (int num : arr1) {
-            sum += num;
+
+        for (int i = 0; i < numbers.length; i++) {
+            sum += numbers[i];
         }
-        System.out.println("Sum of elements = " + sum);
+        System.out.println("Sum of array's elements :"+sum);
         System.out.println("******************************");
 
         // Question Two
@@ -54,18 +55,18 @@ public class Assgiment01DStruc extends ExerciseSix{
         System.out.println("******************************");
 
         // Question Four
-        System.out.println("Qustion Four:");
-        ArrayList<Integer> list1 = new ArrayList<>();
-        list1.add(2);
-        list1.add(4);
-        list1.add(6);
-        list1.add(7);
-        list1.add(9);
-        int sumList = 0;
-        for (int num : list1) {
-            sumList += num;
+        System.out.println("Qustion Four:");  
+        ArrayList<Integer> numberss = new ArrayList<>();
+        numberss.add(2);
+        numberss.add(4);
+        numberss.add(6);
+        numberss.add(7);
+        numberss.add(9);
+        int summ = 0;
+        for (int i = 0; i < numberss.size(); i++) {
+            summ += numberss.get(i);
         }
-        System.out.println("Sum of elements (ArrayList) = " + sumList);
+        System.out.println("Sum of ArrayList elements: " +summ);
         System.out.println("******************************");
 
         // Question Five
@@ -104,3 +105,4 @@ public class Assgiment01DStruc extends ExerciseSix{
         System.out.println("List after removing " + key2 + ": " + filtered);
     }
 }
+
